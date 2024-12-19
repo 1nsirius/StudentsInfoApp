@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#003B46">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управление пользователями"
+            android:textSize="28sp"
+            android:textColor="#C4DFE6"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/surnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите фамилию"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/patronymicInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите отчество"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/birthDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите дату рождения"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите номер телефона"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/admissionDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите дату поступления"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/graduationDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите дату выпуска"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/facultyInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите факультет"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/groupInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите группу"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/courseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите курс"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/averageScoreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите средний балл"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/idInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ID пользователя (для редактирования/удаления)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Кнопка генерации случайных данных -->
+        <Button
+            android:id="@+id/generateRandomDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сгенерировать случайные данные"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#66A5AD"
+            android:textColor="@android:color/white" />
+
+        <!-- Группа кнопок управления пользователями -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Действия с пользователями"
+            android:textSize="20sp"
+            android:textColor="#C4DFE6"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Редактировать пользователя"
+                android:backgroundTint="#66A5AD"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Удалить пользователя"
+                android:backgroundTint="#66A5AD"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" /> <!-- Отступ между кнопками -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить пользователя"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#66A5AD"
+            android:textColor="@android:color/white" />
+
+        <!-- Группа кнопок для просмотра и управления базой данных -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Действия с базой данных"
+            android:textSize="20sp"
+            android:textColor="#C4DFE6"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/viewUsersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Просмотр пользователей"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#66A5AD"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/manageDatabaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Управление базой данных"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#66A5AD"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>
